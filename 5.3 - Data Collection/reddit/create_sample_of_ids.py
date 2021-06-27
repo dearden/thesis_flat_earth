@@ -1,12 +1,9 @@
 import sqlite3
 import json
-import os
-import sys
 import pandas as pd
 from datetime import datetime
 
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-methods")
-from utility_functions import get_time_windows
+from language_change_methods.utility_functions import get_time_windows
 
 
 convert_to_date = lambda x: datetime.strptime(x, "%Y/%m/%d %H:%M:%S")

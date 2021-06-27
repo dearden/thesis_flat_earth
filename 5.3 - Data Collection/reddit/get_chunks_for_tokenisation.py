@@ -1,11 +1,8 @@
 import sqlite3
 import json
 import os
-import sys
 from datetime import datetime
-
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-methods")
-from utility_functions import basic_preprocessing
+from language_change_methods.utility_functions import basic_preprocessing
 
 
 def get_comment_chunks(db_fp, chunk_size, idx_list=None):

@@ -1,22 +1,14 @@
 import regex as re
 import pandas as pd
-import matplotlib.pyplot as plt
-import os
 import json
 from datetime import datetime
-import numpy as np
-import seaborn as sns
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.cluster import MeanShift, estimate_bandwidth
-import sys
 import sqlite3
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-methods")
-from utility_functions import tokenise, get_time_windows, get_data_windows
+
+from language_change_methods.utility_functions import tokenise, get_time_windows, get_data_windows
 from collections import Counter
 import itertools
 
-from features import function_words
+from language_change_methods.features import function_words
 from nltk.corpus import stopwords
 stops = set(stopwords.words('english'))
 func_and_stops = stops.union(function_words)

@@ -1,9 +1,4 @@
 import pickle
-import sys
-import os
-import re
-import json
-	
 import sqlite3
 from sqlite3 import Error as SQLError
 from datetime import datetime

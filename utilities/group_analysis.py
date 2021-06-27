@@ -5,11 +5,10 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.cluster import MeanShift, estimate_bandwidth
 import matplotlib.pyplot as plt
 from typing import Iterable
-import sys
 
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-methods")
-from word_clouds import make_wordcloud
-from features import get_ngram_lr_and_ll
+
+from language_change_methods.word_clouds import make_wordcloud
+from language_change_methods.features import get_ngram_lr_and_ll
 
 colour_list = ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854"]
 

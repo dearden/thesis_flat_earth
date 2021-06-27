@@ -8,12 +8,8 @@ import itertools
 import umap
 from colour import Color
 from collections import Counter
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-methods")
-sys.path.insert(1, "C:/Users/Eddie/Documents/language-change-application/flat-earth-forum/analysis")
 
-from group_analysis import do_kmeans_clustering, plot_clusters, log_and_scale, colour_list
-from helpers import load_posts, load_toks, load_pos, get_top_n_toks
-from features import get_tok_counts, function_words, combine_counts, make_feature_matrix
+from language_change_methods.features import get_tok_counts, function_words, combine_counts, make_feature_matrix
 
 from sklearn.cluster import KMeans, SpectralClustering, MeanShift, estimate_bandwidth
 from sklearn.preprocessing import MinMaxScaler, StandardScaler

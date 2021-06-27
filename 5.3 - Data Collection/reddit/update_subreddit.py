@@ -3,6 +3,9 @@ import json
 import sys
 import os
 from datetime import datetime
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(1, dir_path)
 from scrape_subreddit import scrape_comments
 
 
