@@ -30,6 +30,8 @@ flat_earth_boards = [3, 4, 5, 10, 13]
 off_topic_boards = [6,7,8,9]
 misc_boards = [1,2,11,12]
 
+convert_to_date = lambda x: datetime.strptime(x, "%Y/%m/%d %H:%M:%S")
+
 
 def load_posts(DB_FP):
     conn = sqlite3.connect(DB_FP)
